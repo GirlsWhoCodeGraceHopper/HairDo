@@ -50,26 +50,30 @@
 			<p> Pick a hair length </p>
 			
 			<div>
-				<label> <input type="radio" name="length" value="short"> Short </label>
+				<label> <input type="radio" id="Length" name="length" value="short"> Short </label>
 			</div>
 			<div>
-				<label> <input type="radio" name="length" value="med"> Medium </label>
+				<label> <input type="radio" id="Length" name="length" value="med"> Medium </label>
 			</div>
 			<div>
-				<label><input type="radio" name="length" value="long"> Long </label>
+				<label><input type="radio" id="Length" name="length" value="long"> Long </label>
 			</div>
-			
+
+<p id="jello" > </p>			
+
+<script>
+		hairList=[]	
+		function myFunciton(){
+			var hairlength= document.getElementById('Length').value;
+			hairList.push(hairlength);
+			console.log(hairlength);
+			alert(hairList);
+			}
+		
+</script>
+
+		<radio onclick="myFunction()">Try</button>
 			<p> Pick a hair type </p>
-			
-			<div>
-				<label> <input type="radio" name="type" value="curly"> Curly </label>
-			</div>
-			<div>
-				<label> <input type="radio" name="type" value="wavy"> Wavy </label>
-			</div>
-			<div>
-				<label><input type="radio" name="type" value="straight"> Straight </label>
-			</div>
 			
 			<div data-role= "footer">
 				<h4> This is a footer <h4>
