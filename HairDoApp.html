@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script src="HairDoJS.js"></script>
 		
 		<!-- weather api-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
@@ -29,12 +30,20 @@
 			<div data-role= "header">
 				<h1> Zip code <h1>
 			</div> 
+					
+				<label for="text-1">Where are you heading? </label>
+				<input type="text" name="text-1" id="text-1" value="zip code">
+				
+				<!-- button should go to next page and make zip code into variable "zip" -->
+				<a href="#page3" id="addTask2"> <button onclick="myFunction()">Submit</button> </a>
 			
-			<form>
-				<label for="text-1">Enter Zip Code:  </label>
-				<input type="text" name="text-1" id="text-1" value="">
-				<a href="#page3" id= "addTask" data-role="button">Submit</a>
-			</form>
+			<script>
+				function myFunction() {
+					var zip = document.getElementById("text-1").value;
+					document.getElementById("location").innerHTML = zip;
+				}
+			</script>
+			
 			
 			<div data-role= "footer">
 				<h4> This is a footer <h4>
@@ -46,40 +55,41 @@
 			<div data-role= "header">
 				<h1> Describe your hair: <h1>
 			</div> 
-			
 			<p> Pick a hair length </p>
 			
 			<div>
-				<label> <input type="radio" id="Length" name="length" value="short"> Short </label>
+				<label> <input type="radio" name="length" id= "a" value="short"> Short </label>
 			</div>
 			<div>
-				<label> <input type="radio" id="Length" name="length" value="med"> Medium </label>
+				<label> <input type="radio" name="length" id= "b" value="med"> Medium </label>
 			</div>
 			<div>
-				<label><input type="radio" id="Length" name="length" value="long"> Long </label>
+				<label><input type="radio" name="length" id= "c" value="long"> Long </label>
 			</div>
-
-<p id="jello" > </p>			
-
-<script>
-		hairList=[]	
-		function myFunciton(){
-			var hairlength= document.getElementById('Length').value;
-			hairList.push(hairlength);
-			console.log(hairlength);
-			alert(hairList);
-			}
-		
-</script>
-
-		<radio onclick="myFunction()">Try</button>
+			
 			<p> Pick a hair type </p>
+			
+			<div>
+				<label> <input type="radio" name="type" id="e" value="curly"> Curly </label>
+			</div>
+			<div>
+				<label> <input type="radio" name="type" id="f" value="wavy"> Wavy </label>
+			</div>
+			<div>
+				<label><input type="radio" name="type" id="g" value="straight"> Straight </label>
+			</div>
+	
+			<a href="#page4" id="hair"> <button onclick="newFunction()">Submit</button> </a>
+			
+			
+			
+			<p id="hi">dfasfdsfsafsadfasf</p>
+			<p id = "bye">dfhadfsajla</p<
 			
 			<div data-role= "footer">
 				<h4> This is a footer <h4>
 			</div> 
 		</div>
-		
 		
 		
 		<!-- Fourth Page -->
@@ -88,10 +98,23 @@
 			<div data-role= "header">
 				<h1> Describe your hair: <h1>
 			</div> 
+
+			<p>zip code:</p>
+			<p id="location"></p>
 			<p> Weather: </p>
 		
-			<p> Your hairstyle is: </p>
+		<div data-role="content">
+			<div class="content-primary">	
+				<ul data-role="listview">
+					<p> Your hairstyle is: </p>
+					<li><a href="index.html">
+					<img src="http://bit.ly/VjTF4j" />
+					<h3>Eddie Vedder</h3>
+					<p>Pearl Jam</p>
+				</ul>
+			</div>
 		
+
 		<div data-role= "footer">
 				<h4> This is a footer <h4>
 		</div> 
