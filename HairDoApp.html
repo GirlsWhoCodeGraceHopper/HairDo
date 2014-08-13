@@ -35,7 +35,7 @@
 				<input type="text" name="text-1" id="text-1" value="zip code">
 				
 				<!-- button should go to next page and make zip code into variable "zip" -->
-				<a href="#page3" id="addTask2"> <button onclick="myFunction()">Try it</button> </a>
+				<a href="#page3" id="addTask2"> <button onclick="myFunction()">Submit</button> </a>
 			
 			<script>
 				function myFunction() {
@@ -58,34 +58,70 @@
 			<p> Pick a hair length </p>
 			
 			<div>
-				<label> <input type="radio" name="length" value="short"> Short </label>
+				<label> <input type="radio" name="length" id= "a" value="short"> Short </label>
 			</div>
 			<div>
-				<label> <input type="radio" name="length" value="med"> Medium </label>
+				<label> <input type="radio" name="length" id= "b" value="med"> Medium </label>
 			</div>
 			<div>
-				<label><input type="radio" name="length" value="long"> Long </label>
+				<label><input type="radio" name="length" id= "c" value="long"> Long </label>
 			</div>
 			
 			<p> Pick a hair type </p>
 			
 			<div>
-				<label> <input type="radio" name="type" value="curly"> Curly </label>
+				<label> <input type="radio" name="type" id="e" value="curly"> Curly </label>
 			</div>
 			<div>
-				<label> <input type="radio" name="type" value="wavy"> Wavy </label>
+				<label> <input type="radio" name="type" id="f" value="wavy"> Wavy </label>
 			</div>
 			<div>
-				<label><input type="radio" name="type" value="straight"> Straight </label>
+				<label><input type="radio" name="type" id="g" value="straight"> Straight </label>
 			</div>
 			
-			<a href="#page4" id= "addTask" data-role="button">Submit</a>
+			<button id="hair" onclick= "newFunction()">submit</button>
+			
+			<script>
+				function newFunction(){
+					if (document.getElementById('a').checked) {
+						length = document.getElementById('a').value;
+						document.getElementById("hi").innerHTML = length;
+							}
+					if (document.getElementById('b').checked) {
+						length = document.getElementById('b').value;
+						document.getElementById("hi").innerHTML = length;
+							}
+					if (document.getElementById('c').checked) {
+						length = document.getElementById('c').value;
+						document.getElementById("hi").innerHTML = length;
+							}
+										
+					if (document.getElementById('a').checked) {
+						type = document.getElementById('e').value;
+						document.getElementById("bye").innerHTML = type;
+							}
+					if (document.getElementById('b').checked) {
+						type = document.getElementById('f').value;
+						document.getElementById("bye").innerHTML = type;
+							}
+					if (document.getElementById('c').checked) {
+						type = document.getElementById('g').value;
+						document.getElementById("bye").innerHTML = type;
+							}
+				
+				
+				}
+			
+			
+			</script>
+			
+			<p id="hi">dfasfdsfsafsadfasf</p>
+			<p id = "bye">dfhadfsajla</p<
 			
 			<div data-role= "footer">
 				<h4> This is a footer <h4>
 			</div> 
 		</div>
-		
 		
 		
 		<!-- Fourth Page -->
