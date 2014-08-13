@@ -53,3 +53,37 @@ if (short, curly, a) {
 } 	else if (long, straight, c) {
 		alert ("you did it 3")
 } 
+ //checkboxes 
+
+				function newFunction(){
+					if (document.getElementById('a').checked) {
+						length = document.getElementById('a').value;
+						document.getElementById("hi").innerHTML = length;
+							}
+					if (document.getElementById('b').checked) {
+						length = document.getElementById('b').value;
+						document.getElementById("hi").innerHTML = length;
+							}
+					if (document.getElementById('c').checked) {
+						length = document.getElementById('c').value;
+						document.getElementById("hi").innerHTML = length;
+							}
+										
+					if (document.getElementById('a').checked) {
+						type = document.getElementById('e').value;
+						document.getElementById("bye").innerHTML = type;
+							}
+					if (document.getElementById('b').checked) {
+						type = document.getElementById('f').value;
+						document.getElementById("bye").innerHTML = type;
+							}
+					if (document.getElementById('c').checked) {
+						type = document.getElementById('g').value;
+						document.getElementById("bye").innerHTML = type;
+							}
+				
+				
+				}
+			
+			
+
