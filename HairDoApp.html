@@ -15,7 +15,7 @@
 			<div data-role= "header">
 				<h1> WELCOME <h1>
 			</div> 
-				<p> <a href= "#page3"> Make a new task </a></p>
+				 <a href="#page2" data-role="button"> Start</a>
 			<div data-role= "footer">
 				<h4> This is a footer <h4>
 			</div> 
@@ -30,7 +30,7 @@
 			<form>
 				<label for="text-1">Where are you heading? </label>
 				<input type="text" name="text-1" id="text-1" value="">
-				<a href="#tasks" id= "addTask" data-role="button">Submit</a>
+				<a href="#page3" id= "addTask" data-role="button">Submit</a>
 			</form>
 			
 			<div data-role= "footer">
@@ -45,33 +45,29 @@
 			</div> 
 			
 			<p> Pick a hair length </p>
-			<form>
-				<label> <input type="checkbox" name="checkbox-1" id ="short" "> Short </label>
-			</form>
 			
-			<form>
-				<label> <input type="checkbox" name="checkbox-0 " id = "medium" > Medium </label>
-			</form>
-			
-			<form>
-				<label> <input type="checkbox" name="checkbox-0 " id= "long"> Long </label>
-			</form>
+			<div>
+				<label> <input type="radio" name="length" value="short"> Short </label>
+			</div>
+			<div>
+				<label> <input type="radio" name="length" value="med"> Medium </label>
+			</div>
+			<div>
+				<label><input type="radio" name="length" value="long"> Long </label>
+			</div>
 			
 			<p> Pick a hair type </p>
 			
-			<form>
-				<label> <input type="checkbox" name="checkbox-0 " id="curly"> Curly </label>
-			</form>
+			<div>
+				<label> <input type="radio" name="type" value="curly"> Curly </label>
+			</div>
+			<div>
+				<label> <input type="radio" name="type" value="wavy"> Wavy </label>
+			</div>
+			<div>
+				<label><input type="radio" name="type" value="straight"> Straight </label>
+			</div>
 			
-			<form>
-				<label> <input type="checkbox" name="checkbox-0 " id="wavy"> Wavy </label>
-			</form>
-			
-			<form>
-				<label> <input type="checkbox" name="checkbox-0 " id="straight"> Straight </label>
-			</form>
-			
-			<p> <a href= "#page4"> Make a new task </a></p>
 			<div data-role= "footer">
 				<h4> This is a footer <h4>
 			</div> 
