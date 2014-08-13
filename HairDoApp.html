@@ -30,11 +30,20 @@
 				<h1> Zip code <h1>
 			</div> 
 			
-			<form>
+			
 				<label for="text-1">Where are you heading? </label>
-				<input type="text" name="text-1" id="text-1" value="">
-				<a href="#page3" id= "addTask" data-role="button">Submit</a>
-			</form>
+				<input type="text" name="text-1" id="text-1" value="zip code">
+				
+				<!-- button should go to next page and make zip code into variable "zip" -->
+				<a href="#page3" id="addTask2"> <button onclick="myFunction()">Try it</button> </a>
+			
+			<script>
+				function myFunction() {
+					var zip = document.getElementById("text-1").value;
+					document.getElementById("location").innerHTML = zip;
+				}
+			</script>
+			
 			
 			<div data-role= "footer">
 				<h4> This is a footer <h4>
@@ -46,7 +55,6 @@
 			<div data-role= "header">
 				<h1> Describe your hair: <h1>
 			</div> 
-			
 			<p> Pick a hair length </p>
 			
 			<div>
@@ -84,6 +92,8 @@
 			<div data-role= "header">
 				<h1> Describe your hair: <h1>
 			</div> 
+			<p>zip code:</p>
+			<p id="location"></p>
 			<p> Weather: </p>
 		
 			<p> Your hairstyle is: </p>
