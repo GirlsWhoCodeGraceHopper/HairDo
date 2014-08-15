@@ -60,6 +60,22 @@ p {
 			<div data-role= "header">
 				<h1> WELCOME <h1>
 			</div> 
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+  $.ajax({
+  url : "http://api.wunderground.com/api/2f800aa485a60839/geolookup/conditions/q/IA/Cedar_Rapids.json",
+  dataType : "jsonp",
+  success : function(parsed_json) {
+  var location = parsed_json['location']['city'];
+  var temp_f = parsed_json['current_observation']['temp_f'];
+  alert("Current temperature in " + location + " is: " + temp_f);
+  var relative_humidity = parsed_json['current_observation']['relative_humidity'];
+  alert(relative_humidity);
+  }
+  });
+});
+</script>
 				 <a href="#page2" data-role="button"> Start</a>	
 			<div data-role= "footer">
 				<h4> This is a footer <h4>

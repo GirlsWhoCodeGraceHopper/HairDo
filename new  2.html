@@ -1,0 +1,23 @@
+<div class="current-icon"></div>
+<div class="current"></div>
+
+<div class="next-forecast"></div>
+<script>
+jQuery(document).ready(function($) {
+  $.ajax({
+  url : "http://api.wunderground.com/api/a8c6c1abaa4a5040/geolookup/conditions/forecast/q/NY/Brooklyn.json",
+  dataType : "jsonp",
+  success : function(parsed_json) {
+  var location = parsed_json['current_observation']['display_location']['city'];
+  var temp_f = parsed_json['current_observation']['temp_f'];
+  var current_icon_name = parsed_json['current_observation']['icon'];
+  var current_img = "http://icons-ak.wxug.com/i/c/k/" + current_icon_name + ".gif";
+  var next_forecast =['forecast']['simpleforecast']getJSON(forecastday[0])['date.pretty'];
+    
+    $('.current').append("It's " + temp_f + " in " + location + " right now." );
+    $('.current-icon').append('<img src="' + current_img +'" />');
+    $('.next-forecast').append("Next: " + next_forecast + ".");
+  }
+  });
+});
+</script>
