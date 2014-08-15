@@ -62,9 +62,11 @@ p {
 			</div> 
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <script>
+var ak = "10021"
 jQuery(document).ready(function($) {
   $.ajax({
-  url : "http://api.wunderground.com/api/2f800aa485a60839/geolookup/conditions/q/IA/Cedar_Rapids.json",
+  //url: "http://api.wunderground.com/api/2f800aa485a60839/geolookup/condtitions/q/94107.json",
+  url : "http://api.wunderground.com/api/2f800aa485a60839/geolookup/conditions/q/" + ak +".json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var location = parsed_json['location']['city'];
