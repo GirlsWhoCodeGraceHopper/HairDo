@@ -21,7 +21,8 @@ function show_video(vidlink) {
 	alert("adding tutorial!");
 	$("#video").html("");
 	//appending vid id
-	$("#video").append('<embed width="560" height="315" src="' + vidlink + '" >');
+	$("#video").append('<embed width="560" height="315" src="' + vidlink + '">');
+
 	} 
 	
 function newFunction() {
