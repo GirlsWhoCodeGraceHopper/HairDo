@@ -38,9 +38,7 @@ function newFunction() {
             document.getElementById("hi").innerHTML = length;
             type = document.getElementById('e').value;
             document.getElementById("bye").innerHTML = type;
-			alert("hey");
 			show_image("http://images.beautyriot.com/photos/galleries/easy-styles-curly-hair-03.jpg");
-			alert("sup yo");
 			show_video("http://www.youtube.com/embed/m6JCf320OBQ");
 			}
 		if (document.getElementById('a').checked && document.getElementById('f').checked) {
@@ -49,7 +47,6 @@ function newFunction() {
             type = document.getElementById('f').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://www.short-haircut.com/wp-content/uploads/2014/12/Short-Haircuts-Wavy-Hair.jpg");
-            //alert("Your hair is short");
 			show_video("http://www.youtube.com/v/SJuB03Zg614");
             }
 		if (document.getElementById('a').checked && document.getElementById('g').checked) {
@@ -57,8 +54,8 @@ function newFunction() {
             document.getElementById("hi").innerHTML = length;
             type = document.getElementById('g').value;
             document.getElementById("bye").innerHTML = type;
-            show_image("http://www.short-haircut.com/wp-content/uploads/2014/12/20-Haircuts-for-Short-Wavy-Hair_9.jpg");
-			show_video("http://www.youtube.com/v/s6Bt0eukkkk?version=3&amp;hl=en_US");
+            show_image("http://media-cache-ak0.pinimg.com/236x/59/41/5a/59415acb5d1cd10614661d3835c0d6ec.jpg");
+			show_video("https://www.youtube.com/v/MFQWTvdJ5m8?hl=en_US&amp;version=3");
                 //alert("Your hair is short");
             }	
 		if (document.getElementById('b').checked && document.getElementById('e').checked) {
@@ -67,7 +64,7 @@ function newFunction() {
             type = document.getElementById('e').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://hairstylesweekly.com/images/2012/11/Taylor-Swift-Cute-Curly-Updo-Hairstyle.jpg");
-            alert("Your hair is mediumlength");
+			show_video("https://www.youtube.com/v/ihdDaNkqAYc?version=3&amp;hl=en_US");
             }
 		if (document.getElementById('b').checked && document.getElementById('f').checked) {
             length = document.getElementById('b').value;
