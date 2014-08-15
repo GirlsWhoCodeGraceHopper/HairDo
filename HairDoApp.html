@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>forecast fabulous</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/HairdoCSS.css" />
+		<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" /> 
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script> 
+		<script src="HairDoJS.js"></script>
+		
+		<!-- weather api-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+<!--<html>
+	<head>
 	<script>
 document.getElementById("picture").style.height = "500px";
 document.getElementById("picture").style.width = "50px";
@@ -34,12 +50,12 @@ p {
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 		<script src="HairDoJS.js"></script>
-		<!-- weather api-->
+		<!-- weather api
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	</head>
 	
 	<body>
-		<!-- First page of App-->
+		<!-- First page of App--> 
 		<div data-role="page" id="page1">
 			<div data-role= "header">
 				<h1> WELCOME <h1>
@@ -138,15 +154,11 @@ document.getElementById("p3").style.fontSize = "40px";
 			<div class="content-primary">	
 				<ul data-role="listview">
 					<h1 id="p2" > Your hairstyle is: </h1>
-<script>
-document.getElementById("p2").style.color = "green";
-document.getElementById("p2").style.fontFamily = "Courier New"
-document.getElementById("p2").style.fontSize = "40px";
-</script>
 					
+				
 					<ul data-role="listview" data-inset="true">
-						<li><a href="#page5">
-						<img src="https://i.chzbgr.com/maxW500/2222885120/h1FFE0B1F/">
+						<li><a href="#page5" id= "picture">
+						<img src="imglink">
 						<h2>Broken Bells</h2>
 						<p>Broken Bells</p></a>
 					</li> 
@@ -157,7 +169,7 @@ document.getElementById("p2").style.fontSize = "40px";
 				<h4> This is a footer <h4>
 		</div> 
 		</div>
-	</div>
+		</div>
 		
 		<!-- Page 5 -->
 		<div data-role= "page" id= "page5"> 
@@ -165,16 +177,15 @@ document.getElementById("p2").style.fontSize = "40px";
 				<h1> Hair's How!! <h1>
 			</div>
 			
-			<div>
+			
 			<div>
 				<div id="video" align= "center">
 					<embed src="http://www.youtube.com/v/XGSy3_Czz8k">
 				</div>
+				<div data-role= "footer">
+					<h4> This is a footer <h4>
+				</div> 
 			</div>
-			</div>
-			<div data-role= "footer">
-				<h4> This is a footer <h4>
-			</div> 
 		</div>
 	</body>	
 		
