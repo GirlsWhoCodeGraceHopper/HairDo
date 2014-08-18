@@ -16,6 +16,13 @@
 .mainheader {
 	font-family:'Lobster', cursive;
 	text-align: center;
+	font-size: 210%
+}
+.subheader{
+	font-family:'Lobster', cursive;
+	text-align: center;
+	font-size: 100%
+
 }
 html {
 	font-size: 100%;
