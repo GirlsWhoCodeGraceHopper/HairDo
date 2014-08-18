@@ -128,7 +128,8 @@ function newFunction() {
                 document.getElementById("hi").innerHTML = length;
                 type = document.getElementById('e').value;
                 document.getElementById("bye").innerHTML = type;
-                show_image ("http://media-cache-ak0.pinimg.com/236x/76/1b/f7/761bf7e5342baef66c8672b9d159dfa8.jpg");
+                show_image ("http://i.ytimg.com/vi/GJ4KSL6nOPE/mqdefault.jpg");
+				show_video ("http://www.youtube.com/v/GJ4KSL6nOPE?version=3&amp;hl=en_US ")
                 //alert("Your hair is short");
             }
 			
@@ -148,7 +149,8 @@ function newFunction() {
                 document.getElementById("hi").innerHTML = length;
                 type = document.getElementById('g').value;
                 document.getElementById("bye").innerHTML = type;
-                show_image("http://www.short-haircut.com/wp-content/uploads/2014/07/20-Straight-Hairstyles-for-Short-Hair_4.jpg");
+                show_image("http://i.ytimg.com/vi/eUQSk5fNrZU/0.jpg");
+				show_video("http://www.youtube.com/v/eUQSk5fNrZU?hl=en_US&amp;version=3")
             }
 			
 			//conditional 12//
