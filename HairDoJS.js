@@ -6,14 +6,14 @@ function show_image(imglink) {
 	$("#picture").html("");
 	//append img id 
 	$("#picture").html('<img width="200px" height="200px" align="left" src="' + imglink + '" />' +
-		'<p> Specific instructions on how to do hairstyle. </p>');
+		'<p> Click me to see a tutorial to get this look </p>');
 }
 
 function show_video(vidlink) {
 	alert("adding tutorial!");
 	$("#video").html("");
 	//appending vid id
-	$("#video").append('<embed width="560" height="315" src="' + vidlink + '">');
+	$("#video").append('<embed width="560" height="315" src="' + vidlink + '"><object width="100" height="300" data="pearlshampoos2.swf"></object>');
 	} 
 	
 function newFunction() {
@@ -87,7 +87,7 @@ function newFunction() {
             type = document.getElementById('e').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://images.beautyriot.com/photos/galleries/easy-styles-curly-hair-emmy-rossum-11.jpg");
-			show_video ("http://www.youtube.com/v/BXD8ty2LfZc?version=3&amp;hl=en_US");
+			show_video ("http://www.youtube.com/embed/BXD8ty2LfZc");
             }	
 		//conditional 7//
 
@@ -282,6 +282,6 @@ if (humidity > 0.71) {
                 type = document.getElementById('g').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://blog.muipr.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-26-at-1.03.09-PM.png")
-				show_video ("http://www.youtube.com/v/ZyZkowmdZv8?hl=en_US&amp;version=3");
+				show_video ("http://www.youtube.com/embed/ZyZkowmdZv8");
             }
         }
