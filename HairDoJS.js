@@ -1,20 +1,11 @@
 
 //function show_image(src, width, height, alt) {
 function show_image(imglink) { 
-   /*var img = document.createElement("img");
-    img.src = src;
-    img.width = width;
-    img.height = height;
-    img.alt = alt;
-    document.body.appendChild(img);
-    //make sure newFunction contains the humididty*/
-		
-		
 	alert("changing picture!");
 	//clear the picture div
 	$("#picture").html("");
 	//append img id 
-	$("#picture").append('<img width="350" height="350" align="right" src="' + imglink + '" />');
+	$("#picture").append('<img width="600" height="400" align="right" src="' + imglink + '" />');
 }
 
 function show_video(vidlink) {
@@ -29,10 +20,8 @@ function newFunction() {
 	//show_image("https://lh6.googleusercontent.com/f0Afo_malHBKaZClIb4w-8X8yQ69mUnmpKw9wJSycTZNbxkEwPQaVmrIfjni1a_vrtE9Gw=s190");
 	//show_image("https://lh5.googleusercontent.com/5wR_2UTjEdyiHBsGGUZMGHQE-SO0gifOCXNI7MWTZQ6mW5iON3jSbNTnwahsoAtSe8FShQ=w1034-h627");
 
-	
     if (humidity < 0.31) {
-	
-		//condtional 1//
+		//conditional 1//
         if (document.getElementById('a').checked && document.getElementById('e').checked) {
             length = document.getElementById('a').value;
             document.getElementById("hi").innerHTML = length;
