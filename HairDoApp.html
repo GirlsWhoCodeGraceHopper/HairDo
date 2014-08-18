@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="themes/pinkTheme.css" />
 		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" /> 
@@ -25,7 +26,7 @@
 			</div>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
-				 <a href="#page2" data-role="button"> Start</a>	
+				 <a href="#page2" data-role="button" class= "maintext"> Start</a>	
 			
 		
 		</div>
@@ -36,12 +37,14 @@
 				<h1> Forecast Fabulous </h1>
 			</div>
 			</div> 
-					
-				<label for="text-1">Where are you heading? </label>
-				<input type="text" name="text-1" id="text-1" placeholder= "zip code" value="">
-				
+				<br> </br>
+				<!--<label for="text-1" class= "maintext">Where are you heading? </label>-->
+				<p class="maintext">Where are you heading? </p>
+				<br> </br>
+				<input type="text" name="text-1" id="text-1" placeholder= "Zip Code" value="">
+				<br> </br>
 				<!-- button should go to next page and make zip code into variable "zip" -->
-				<a href="#page3" id="addTask2"> <button onclick="myFunction()">Submit</button> </a>
+				<a href="#page3" id="addTask2"> <button onclick="myFunction()" class="maintext">Submit</button> </a>
 			
 			
 			<script>
@@ -51,7 +54,7 @@
 			function myFunction() {
 					zip = document.getElementById("text-1").value;
 					document.getElementById("location").innerHTML = zip;
-					alert(zip);
+
 					 $.ajax({
 				  //url: "http://api.wunderground.com/api/2f800aa485a60839/geolookup/condtitions/q/94107.json",
 				  url : "http://api.wunderground.com/api/2f800aa485a60839/geolookup/conditions/q/" + zip +".json",
@@ -59,17 +62,17 @@
 				  success : function(parsed_json) {
 				  var location = parsed_json['location']['city'];
 				  var temp_f = parsed_json['current_observation']['temp_f'];
-				  alert("Current temperature in " + location + " is: " + temp_f);
+				  //alert("Current temperature in " + location + " is: " + temp_f);
 				  var relative_humidity = parsed_json['current_observation']['relative_humidity'];
-				  alert(relative_humidity);
+				  //alert(relative_humidity);
 				  poop = relative_humidity;
 				  humidity = parseInt(poop) / 100.0;
-				  document.getElementById("location").innerHTML = location;
-				  document.getElementById("humid").innerHTML = poop;
+				  document.getElementById("location").innerHTML = "Location: "+location;
+				  document.getElementById("humid").innerHTML = "Humidity: "+poop;
 				}
 			});
 				}
-				alert(zip);
+				//alert(zip);
 				//var ak = "10021"
 				jQuery(document).ready(function($) {
 				 
@@ -79,8 +82,7 @@
 			
 			<div data-role= "footer">
 				<h4> 
-				“I think that the most important thing a woman can have- next to talent, of course- is her hairdresser.” 
-― 				Joan Crawford<h4>
+				forecast fabulous<h4>
 			</div> 
 		</div>
 		
@@ -95,7 +97,7 @@
 			</div>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 			</div> 
-			<p> Choose your hair's length </p>
+			<p class="maintext"> Choose your hair's length </p>
 			
 			<div>
 				<fieldset data-role= "controlgroup">
@@ -106,7 +108,7 @@
 				<input type="radio" name="length" id= "c" value="long"><label for= "c"> Long </label>
 			</div>
 			
-			<p>Pick a hair type </p>
+			<p class="maintext">Pick a hair type </p>
 			
 			<div>
 				<fieldset data-role= "controlgroup">
@@ -132,29 +134,32 @@
 		<!-- Fourth Page -->
 		<div data-role= "page" id= "page4"> 
 			<div data-role= "header">
-				<h1 id="p3"> Here you go: <h1>
+				<h1 id="p3" class="maintext"> Here you go: <h1>
 			
 			</div> 
 
-			<p>Location:</p>
-			<p id="location"></p>
-			<p> Humidity: </p>
-			<p id= "humid"> </p>
+
+			<div id="location"></div>
+			
+			<div id= "humid"> </div>
 			
 		<div data-role="content">
 			<div class="content-primary">	
 				<ul data-role="listview">
-					<h1 id="p2" > Your hairstyle is: </h1>
-					<div id="hi"></div>
-					<div id="bye"></div>				
-					<ul data-role="listview" data-inset="true">
+					<h1 id="p2" class= "maintext"> Your hairstyle is: </h1>
+					<ul data-role="listview" data-inset="true" >
 						<li>
-							<a href="#page5" id= "picture">
+						
+							<a href="#page5">
+							<div id= "picture">
+							
+							</div>
 							</a>
 						</li> 
 					</ul>
 			</div>
-
+			<br> </br>
+			<br> </br>
 		<div data-role= "footer" style= "background-color: white border-style:none">
 				
 				<img style="height:auto; width:auto; max-width:100px; max-height:100px;" src= "http://icons.wxug.com/logos/JPG/wundergroundLogo_4c.jpg" />
@@ -166,18 +171,22 @@
 		<!-- Page 5 -->
 		<div data-role= "page" id= "page5"> 
 			<div data-role= "header">
-				<h1> Hair's How!! <h1>
+				<h1 class="subtext"> Hair's How!! <h1>
 			</div>
-			
-			
+		
 			<div>
 				<div id="video" align= "center">
 					<embed src="http://www.youtube.com/v/XGSy3_Czz8k">
 				</div>
 				<div data-role= "footer">
-					<h4> This is a footer <h4>
+					<h4> forecast fabulous <h4>
 				</div> 
 			</div>
+		</div>
+		
+		<div data-role= "page" id="page6">
+			<div id="hi"></div>
+			<div id="bye"></div>
 		</div>
 	</body>	
 		

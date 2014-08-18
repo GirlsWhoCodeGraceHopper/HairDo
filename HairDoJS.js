@@ -5,7 +5,8 @@ function show_image(imglink) {
 	//clear the picture div
 	$("#picture").html("");
 	//append img id 
-	$("#picture").append('<img width="600" height="400" align="right" src="' + imglink + '" />');
+	$("#picture").html('<img width="200px" height="200px" align="left" src="' + imglink + '" />' +
+		'<p> Specific instructions on how to do hairstyle. </p>');
 }
 
 function show_video(vidlink) {
@@ -13,7 +14,6 @@ function show_video(vidlink) {
 	$("#video").html("");
 	//appending vid id
 	$("#video").append('<embed width="560" height="315" src="' + vidlink + '">');
-
 	} 
 	
 function newFunction() {
@@ -258,6 +258,7 @@ if (humidity > 0.71) {
                 document.getElementById("bye").innerHTML = type;
                 show_image("https://i.ytimg.com/vi/Ul8RTTXXp3s/maxresdefault.jpg");
                 show_video ("http://www.youtube.com/v/Ul8RTTXXp3s?hl=en_US&amp;version=3");
+				
             }
         if (document.getElementById('c').checked && document.getElementById('e').checked) {
                 length = document.getElementById('c').value;
