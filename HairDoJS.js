@@ -26,13 +26,11 @@ function show_video(vidlink) {
 	} 
 	
 function newFunction() {
-    var humidity = 11;
-
 	//show_image("https://lh6.googleusercontent.com/f0Afo_malHBKaZClIb4w-8X8yQ69mUnmpKw9wJSycTZNbxkEwPQaVmrIfjni1a_vrtE9Gw=s190");
 	//show_image("https://lh5.googleusercontent.com/5wR_2UTjEdyiHBsGGUZMGHQE-SO0gifOCXNI7MWTZQ6mW5iON3jSbNTnwahsoAtSe8FShQ=w1034-h627");
 
 	
-    if (humidity < 31) {
+    if (humidity < 0.31) {
 	
 		//condtional 1//
         if (document.getElementById('a').checked && document.getElementById('e').checked) {
@@ -123,7 +121,7 @@ function newFunction() {
 			show_video ("http: //www.youtube.com/v/2ABcn-9-P0Y?version=3&amp;hl=en_US");
 			}	
 	}
-	if (humidity > 31 && humidity < 70) {
+	if (humidity > 0.32 && humidity < 0.70) {
         //conditional 9//
 		if (document.getElementById('a').checked && document.getElementById('e').checked) {
                 length = document.getElementById('a').value;

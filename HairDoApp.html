@@ -4,8 +4,9 @@
 		<title>forecast fabulous</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="themes/HairdoCSS.css" />
-		<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="themes/pinkTheme.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" /> 
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
 		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script> 
@@ -15,75 +16,18 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-<!--<html>
-	<head>
-	<script>
-document.getElementById("picture").style.height = "500px";
-document.getElementById("picture").style.width = "50px";
-</script>
-		<style>
 
-h1 {
-    color: red;
-    text-align: center;
-	font-family: "Courier New", Courier, monospace;
-    font-size: 1000px;
-}
-h3 {
-    color: red;
-    text-align: right;
-	font-family: "Courier New", Courier, monospace;
-    font-size: 30px;
-}
-
-p {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 30px;
-	text-align: center;
-}
-
-
-</style>
-		<title>Page Title</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-		<script src="HairDoJS.js"></script>
-		<!-- weather api
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	</head>
-	
-	<body>
 		<!-- First page of App--> 
-		<div data-role="page" id="page1">
-			<div data-role= "header">
-				<h1> WELCOME <h1>
-			</div> 
+		<div data-role="page" id="page1" data-theme="b">
+			<div class= "mainheader">
+				<h1> Forecast Fabulous <h1>
+			</div>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script>
-var ak = "10021"
-jQuery(document).ready(function($) {
-  $.ajax({
-  //url: "http://api.wunderground.com/api/2f800aa485a60839/geolookup/condtitions/q/94107.json",
-  url : "http://api.wunderground.com/api/2f800aa485a60839/geolookup/conditions/q/" + ak +".json",
-  dataType : "jsonp",
-  success : function(parsed_json) {
-  var location = parsed_json['location']['city'];
-  var temp_f = parsed_json['current_observation']['temp_f'];
-  alert("Current temperature in " + location + " is: " + temp_f);
-  var relative_humidity = parsed_json['current_observation']['relative_humidity'];
-  alert(relative_humidity);
-  }
-  });
-});
-</script>
+
 				 <a href="#page2" data-role="button"> Start</a>	
-			<div data-role= "footer">
-				<h4> This is a footer <h4>
-			</div> 
-		</div>
+			
 		
+		</div>
 		<!-- Second page of App-->
 		<div data-role="page" id="page2">
 			<div data-role= "header">
@@ -97,11 +41,37 @@ jQuery(document).ready(function($) {
 				<a href="#page3" id="addTask2"> <button onclick="myFunction()">Submit</button> </a>
 			
 			<script>
+			var zip = "10021";
+			var poop = "12%";
+			var humidity = "1";
 				function myFunction() {
-					var zip = document.getElementById("text-1").value;
+					zip = document.getElementById("text-1").value;
 					document.getElementById("location").innerHTML = zip;
+					alert(zip);
+					 $.ajax({
+				  //url: "http://api.wunderground.com/api/2f800aa485a60839/geolookup/condtitions/q/94107.json",
+				  url : "http://api.wunderground.com/api/2f800aa485a60839/geolookup/conditions/q/" + zip +".json",
+				  dataType : "jsonp",
+				  success : function(parsed_json) {
+				  var location = parsed_json['location']['city'];
+				  var temp_f = parsed_json['current_observation']['temp_f'];
+				  alert("Current temperature in " + location + " is: " + temp_f);
+				  var relative_humidity = parsed_json['current_observation']['relative_humidity'];
+				  alert(relative_humidity);
+				  poop = relative_humidity;
+				  humidity = parseInt(poop) / 100.0;
+				  
+				  alert (humidity);
+				  alert (poop);
 				}
-			</script>
+			});
+				}
+				alert(zip);
+				//var ak = "10021"
+				jQuery(document).ready(function($) {
+				 
+});
+</script>
 			
 			
 			<div data-role= "footer">
@@ -119,25 +89,23 @@ jQuery(document).ready(function($) {
 			<p> >>Choose your hair's length<< </p>
 			
 			<div>
-				<label> <input type="radio" name="length" id= "a" value="short"> Short </label>
-			</div>
-			<div>
-				<label> <input type="radio" name="length" id= "b" value="med"> Medium </label>
-			</div>
-			<div>
-				<label><input type="radio" name="length" id= "c" value="long"> Long </label>
+				<fieldset data-role= "controlgroup">
+				<input type="radio" name="length" id= "a" value="short"><label for= "a"> Short </label>
+			
+				<input type="radio" name="length" id= "b" value="med"> <label for= "b"> Medium </label>
+			
+				<input type="radio" name="length" id= "c" value="long"><label for= "c"> Long </label>
 			</div>
 			
 			<p> >>Pick a hair type<< </p>
 			
 			<div>
-				<label> <input type="radio" name="type" id="e" value="curly"> Curly </label>
-			</div>
-			<div>
-				<label> <input type="radio" name="type" id="f" value="wavy"> Wavy </label>
-			</div>
-			<div>
-				<label><input type="radio" name="type" id="g" value="straight"> Straight </label>
+				<fieldset data-role= "controlgroup">
+				<input type="radio" name="type" id="e" value="curly"> <label for= "e"> Curly </label>
+		
+				<input type="radio" name="type" id="f" value="wavy"> <label for= "f"> Wavy </label>
+			
+				<input type="radio" name="type" id="g" value="straight"> <label for= "g"> Straight </label>
 			</div>
 	
 			<a href="#page4" id="hair"> <button onclick="newFunction()">Submit</button> </a>
@@ -175,11 +143,10 @@ document.getElementById("p3").style.fontSize = "40px";
 					
 				
 					<ul data-role="listview" data-inset="true">
-						<li><a href="#page5" id= "picture">
-						<img src="imglink">
-						<h2>Broken Bells</h2>
-						<p>Broken Bells</p></a>
-					</li> 
+						<li>
+							<a href="#page5" id= "picture">
+							</a>
+						</li> 
 					</ul>
 			</div>
 
