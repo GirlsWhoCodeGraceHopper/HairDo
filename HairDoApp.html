@@ -60,6 +60,8 @@
 				  alert(relative_humidity);
 				  poop = relative_humidity;
 				  humidity = parseInt(poop) / 100.0;
+				  document.getElementById("location").innerHTML = location;
+				  document.getElementById("humid").innerHTML = poop;
 				}
 			});
 				}
@@ -123,15 +125,16 @@
 			<div data-role= "header">
 				<h1 id="p3"> Describe your hair: <h1>
 <script>
-document.getElementById("p3").style.color = "blue";
+document.getElementById("p3").style.color = "black";
 document.getElementById("p3").style.fontFamily = "Courier New"
 document.getElementById("p3").style.fontSize = "40px";
 </script>				
 			</div> 
 
-			<p>zip code</p>
+			<p>Location:</p>
 			<p id="location"></p>
 			<p> Humidity: </p>
+			<p id= "humid"> </p>
 			
 		<div data-role="content">
 			<div class="content-primary">	
