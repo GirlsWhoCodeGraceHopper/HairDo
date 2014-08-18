@@ -20,7 +20,7 @@ function newFunction() {
 	//show_image("https://lh6.googleusercontent.com/f0Afo_malHBKaZClIb4w-8X8yQ69mUnmpKw9wJSycTZNbxkEwPQaVmrIfjni1a_vrtE9Gw=s190");
 	//show_image("https://lh5.googleusercontent.com/5wR_2UTjEdyiHBsGGUZMGHQE-SO0gifOCXNI7MWTZQ6mW5iON3jSbNTnwahsoAtSe8FShQ=w1034-h627");
 
-    if (humidity < 0.31) {
+    if (humidity < 0.46) {
 		//conditional 1//
         if (document.getElementById('a').checked && document.getElementById('e').checked) {
             length = document.getElementById('a').value;
@@ -110,7 +110,7 @@ function newFunction() {
 			show_video ("http: //www.youtube.com/v/2ABcn-9-P0Y?version=3&amp;hl=en_US");
 			}	
 	}
-	if (humidity > 0.32 && humidity < 0.70) {
+	if (humidity > 0.47 && humidity < 0.70) {
         //conditional 9//
 		if (document.getElementById('a').checked && document.getElementById('e').checked) {
                 length = document.getElementById('a').value;
@@ -129,7 +129,7 @@ function newFunction() {
                 type = document.getElementById('f').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://www.short-haircut.com/wp-content/uploads/2014/12/20-Wavy-Hairstyles-for-Short-Hair_4.jpg");
-                show_video ("hhtp://www.youtube.com/v/MPCI-JefPgE?version=3&amp;hl=en_US");
+                show_video ("http://www.youtube.com/v/MPCI-JefPgE?version=3&amp;hl=en_US");
 				//alert("Your hair is short");
             }
 			
@@ -150,7 +150,7 @@ function newFunction() {
             type = document.getElementById('e').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://img.youtube.com/vi/wLJgEOIN-uY/mqdefault.jpg");
-			show_video ("http: //www.youtube.com/v/wLJgEOIN-uY?hl=en_US&amp;version=3");
+			show_video ("http://www.youtube.com/v/wLJgEOIN-uY?hl=en_US&amp;version=3");
             }
 			
 			//conditional 13//
@@ -160,7 +160,7 @@ function newFunction() {
              type = document.getElementById('f').value;
              document.getElementById("bye").innerHTML = type;
              show_image("http://images.beautyriot.com/photos/galleries/easy-styles-curly-hair-keri-russell-01.jpg");
-			 show_video ("http: //www.youtube.com/v/p0iblipOleU?version=3&amp;hl=en_US");
+			 show_video ("http://www.youtube.com/embed/p0iblipOleU");
             }
 			
 			//conditional 14//
@@ -170,7 +170,7 @@ function newFunction() {
              type = document.getElementById('g').value;
              document.getElementById("bye").innerHTML = type;
              show_image("http://i.ytimg.com/vi/Bf-gRNE0uDs/0.jpg");
-			 show_video ("http: //www.youtube.com/v/Bf-gRNE0uDs?version=3&amp;hl=en_US");
+			 show_video ("http://www.youtube.com/v/Bf-gRNE0uDs?version=3&amp;hl=en_US");
             }
 			
 			//conditional 15//
