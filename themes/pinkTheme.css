@@ -24,6 +24,13 @@
 	font-size: 100%
 
 }
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
+# picture{
+	height= 50%
+	
+
+}
 html {
 	font-size: 100%;
 }
