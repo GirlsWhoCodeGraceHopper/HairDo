@@ -6,20 +6,32 @@ function show_image(imglink) {
 	$("#picture").html("");
 	//append img id 
 	$("#picture").html('<img width="200px" height="200px" align="left" src="' + imglink + '" />' +
+<<<<<<< HEAD
 		'<h2 class= "thumbnail"   > Click here to get this look </h2>');
+=======
+		'<p> Specific instructions on how to do hairstyle. </p>');
+>>>>>>> origin/master
 }
 
 function show_video(vidlink) {
 	$("#video").html("");
 	//appending vid id
+<<<<<<< HEAD
 	$("#video").append('<embed width="560" height="315" src="' + vidlink + '"><object width="100" height="320" data="pearlshampoos2.swf"></object>');
+=======
+	$("#video").append('<embed width="560" height="315" src="' + vidlink + '">');
+>>>>>>> origin/master
 	} 
 	
 function newFunction() {
 	//show_image("https://lh6.googleusercontent.com/f0Afo_malHBKaZClIb4w-8X8yQ69mUnmpKw9wJSycTZNbxkEwPQaVmrIfjni1a_vrtE9Gw=s190");
 	//show_image("https://lh5.googleusercontent.com/5wR_2UTjEdyiHBsGGUZMGHQE-SO0gifOCXNI7MWTZQ6mW5iON3jSbNTnwahsoAtSe8FShQ=w1034-h627");
 
+<<<<<<< HEAD
     if (humidity <=0.46) {
+=======
+    if (humidity < 0.31) {
+>>>>>>> origin/master
 		//conditional 1//
         if (document.getElementById('a').checked && document.getElementById('e').checked) {
             length = document.getElementById('a').value;
@@ -37,7 +49,7 @@ function newFunction() {
             type = document.getElementById('f').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://www.short-haircut.com/wp-content/uploads/2014/12/Short-Haircuts-Wavy-Hair.jpg");
-			show_video("http://www.youtube.com/v/SJuB03Zg614");
+			show_video("http://www.youtube.com/embed/SJuB03Zg614");
             }
 			
 			//conditional 3//
@@ -47,7 +59,7 @@ function newFunction() {
             type = document.getElementById('g').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://media-cache-ak0.pinimg.com/236x/59/41/5a/59415acb5d1cd10614661d3835c0d6ec.jpg");
-			show_video("https://www.youtube.com/v/MFQWTvdJ5m8?hl=en_US&amp;version=3");
+			show_video("https://www.youtube.com/embed/MFQWTvdJ5m8?hl=en_US&amp;version=3");
                 //alert("Your hair is short");
             }	
 			
@@ -58,7 +70,7 @@ function newFunction() {
             type = document.getElementById('e').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://hairstylesweekly.com/images/2012/11/Taylor-Swift-Cute-Curly-Updo-Hairstyle.jpg");
-			show_video("https://www.youtube.com/v/ihdDaNkqAYc?version=3&amp;hl=en_US");
+			show_video("https://www.youtube.com/embed/ihdDaNkqAYc?version=3&amp;hl=en_US");
             }
 			//conditional 4//
 		if (document.getElementById('b').checked && document.getElementById('f').checked) {
@@ -67,7 +79,7 @@ function newFunction() {
             type = document.getElementById('f').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://media-cache-ec0.pinimg.com/236x/f0/5c/9d/f05c9d5ca50e043f90a1ff594c57317d.jpg");
-			show_video ("http://www.youtube.com/v/m9mGm-MJSmI?hl=en_US&amp;version=3");
+			show_video ("http://www.youtube.com/embed/m9mGm-MJSmI?hl=en_US&amp;version=3");
 			}
 			//conditional 5//
         if (document.getElementById('b').checked && document.getElementById('g').checked) {
@@ -76,7 +88,7 @@ function newFunction() {
             type = document.getElementById('g').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://uhairtv.com/wp-content/themes/videozoom/scripts/timthumb.php?src=http://uhairtv.com/wp-content/uploads/2013/03/0236.jpg&h=160&w=228&zc=1");
-			show_video ("http://www.youtube.com/v/MNoQLcRAg9g?version=3&amp;hl=en_US");
+			show_video ("http://www.youtube.com/embed/MNoQLcRAg9g?version=3&amp;hl=en_US");
             alert("Your hair is mediumlength");
             }
 			//conditional 6//
@@ -86,7 +98,7 @@ function newFunction() {
             type = document.getElementById('e').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://images.beautyriot.com/photos/galleries/easy-styles-curly-hair-emmy-rossum-11.jpg");
-			show_video ("http://www.youtube.com/embed/BXD8ty2LfZc");
+			show_video ("http://www.youtube.com/embed/BXD8ty2LfZc?version=3&amp;hl=en_US");
             }	
 		//conditional 7//
 
@@ -96,7 +108,7 @@ function newFunction() {
                 type = document.getElementById('f').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://3.bp.blogspot.com/-RHLpNmPruWs/TaNA-ulx6OI/AAAAAAAAAiQ/rbhMwQxhTyc/s1600/low+bun2.jpg");
-				show_video ("//www.youtube.com/v/xwpoyhUq3m8?version=3&amp;hl=en_US");
+				show_video ("//www.youtube.com/embed/xwpoyhUq3m8?version=3&amp;hl=en_US");
             }
 			
 			//conditional 8//
@@ -106,10 +118,14 @@ function newFunction() {
             type = document.getElementById('g').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://stylenoted.com/wp-content/uploads/2012/06/kim-kardashian-sleek-ponytail-hairstyle.jpg");
-			show_video ("http: //www.youtube.com/v/2ABcn-9-P0Y?version=3&amp;hl=en_US");
+			show_video ("http: //www.youtube.com/embed/2ABcn-9-P0Y?version=3&amp;hl=en_US");
 			}	
 	}
+<<<<<<< HEAD
 	if (humidity >= 0.47 && humidity <= 0.70) {
+=======
+	if (humidity > 0.32 && humidity < 0.70) {
+>>>>>>> origin/master
         //conditional 9//
 		if (document.getElementById('a').checked && document.getElementById('e').checked) {
                 length = document.getElementById('a').value;
@@ -117,7 +133,7 @@ function newFunction() {
                 type = document.getElementById('e').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image ("http://i.ytimg.com/vi/GJ4KSL6nOPE/mqdefault.jpg");
-				show_video ("http://www.youtube.com/v/GJ4KSL6nOPE?version=3&amp;hl=en_US ");
+				show_video ("http://www.youtube.com/embed/GJ4KSL6nOPE?version=3&amp;hl=en_US ");
                 //alert("Your hair is short");
             }
 			
@@ -128,7 +144,7 @@ function newFunction() {
                 type = document.getElementById('f').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://www.short-haircut.com/wp-content/uploads/2014/12/20-Wavy-Hairstyles-for-Short-Hair_4.jpg");
-                show_video ("http://www.youtube.com/v/MPCI-JefPgE?version=3&amp;hl=en_US");
+                show_video ("hhtp://www.youtube.com/embed/MPCI-JefPgE?version=3&amp;hl=en_US");
 				//alert("Your hair is short");
             }
 			
@@ -139,7 +155,7 @@ function newFunction() {
                 type = document.getElementById('g').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://i.ytimg.com/vi/eUQSk5fNrZU/0.jpg");
-				show_video("http://www.youtube.com/v/eUQSk5fNrZU?hl=en_US&amp;version=3");
+				show_video("http://www.youtube.com/embed/eUQSk5fNrZU?hl=en_US&amp;version=3");
             }
 			
 			//conditional 12//
@@ -149,7 +165,7 @@ function newFunction() {
             type = document.getElementById('e').value;
             document.getElementById("bye").innerHTML = type;
             show_image("http://img.youtube.com/vi/wLJgEOIN-uY/mqdefault.jpg");
-			show_video ("http://www.youtube.com/v/wLJgEOIN-uY?hl=en_US&amp;version=3");
+			show_video ("http: //www.youtube.com/embed/wLJgEOIN-uY?hl=en_US&amp;version=3");
             }
 			
 			//conditional 13//
@@ -159,7 +175,7 @@ function newFunction() {
              type = document.getElementById('f').value;
              document.getElementById("bye").innerHTML = type;
              show_image("http://images.beautyriot.com/photos/galleries/easy-styles-curly-hair-keri-russell-01.jpg");
-			 show_video ("http://www.youtube.com/embed/p0iblipOleU");
+			 show_video ("http: //www.youtube.com/embed/p0iblipOleU?version=3&amp;hl=en_US");
             }
 			
 			//conditional 14//
@@ -169,7 +185,7 @@ function newFunction() {
              type = document.getElementById('g').value;
              document.getElementById("bye").innerHTML = type;
              show_image("http://i.ytimg.com/vi/Bf-gRNE0uDs/0.jpg");
-			 show_video ("http://www.youtube.com/v/Bf-gRNE0uDs?version=3&amp;hl=en_US");
+			 show_video ("http: //www.youtube.com/embed/Bf-gRNE0uDs?version=3&amp;hl=en_US");
             }
 			
 			//conditional 15//
@@ -179,7 +195,7 @@ function newFunction() {
              type = document.getElementById('e').value;
              document.getElementById("bye").innerHTML = type;
              show_image("http://img.youtube.com/vi/eaQb8MuGe9Y/0.jpg");
-            show_video ("http://www.youtube.com/v/eaQb8MuGe9Y?version=3&amp;hl=en_US");
+            show_video ("http://www.youtube.com/embed/eaQb8MuGe9Y?version=3&amp;hl=en_US");
 			}
 			
 			//conditional 16//
@@ -189,7 +205,7 @@ function newFunction() {
              type = document.getElementById('f').value;
              document.getElementById("bye").innerHTML = type;
              show_image("http://i.ytimg.com/vi/jLNY1vbesuA/hqdefault.jpg");
-			 show_video ("http://www.youtube.com/v/jLNY1vbesuA?version=3&amp;hl=en_US")
+			 show_video ("http://www.youtube.com/embed/jLNY1vbesuA?version=3&amp;hl=en_US")
             }
 			
 			//conditional 17//
@@ -199,7 +215,7 @@ function newFunction() {
              type = document.getElementById('g').value;
              document.getElementById("bye").innerHTML = type;
              show_image("http://i1.ytimg.com/vi/KylkbQ4YYKM/hqdefault.jpg");
-			 show_video ("http://www.youtube.com/v/LVS2UcTnYUg?hl=en_US&amp;version=3")
+			 show_video ("http://www.youtube.com/embed/LVS2UcTnYUg?hl=en_US&amp;version=3")
             }		
 }
 }
@@ -211,7 +227,7 @@ if (humidity >= 0.71) {
                 type = document.getElementById('e').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("https://i.ytimg.com/vi/Js0M1xW4NQo/hqdefault.jpg");
-				show_video ("http://www.youtube.com/v/Js0M1xW4NQo?version=3&amp;hl=en_US");
+				show_video ("http://www.youtube.com/embed/Js0M1xW4NQo?version=3&amp;hl=en_US");
                 //alert("Your hair is short");
             }
 
@@ -221,7 +237,7 @@ if (humidity >= 0.71) {
                 type = document.getElementById('f').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://i.ytimg.com/vi/mINGzR61W8Y/mqdefault.jpg");
-                show_video ("http://www.youtube.com/v/mINGzR61W8Y?hl=en_US&amp;version=3");
+                show_video ("http://www.youtube.com/embed/mINGzR61W8Y?hl=en_US&amp;version=3");
 				//alert("Your hair is short");
             }
             if (document.getElementById('a').checked && document.getElementById('g').checked) {
@@ -230,7 +246,7 @@ if (humidity >= 0.71) {
                 type = document.getElementById('g').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("https://i.ytimg.com/vi/CyBEUS8RMrM/hqdefault.jpg");
-				show_video ("http://www.youtube.com/v/CyBEUS8RMrM?hl=en_US&amp;version=3");
+				show_video ("http://www.youtube.com/embed/CyBEUS8RMrM?hl=en_US&amp;version=3");
                 //alert("Your hair is short");
             }
         if (document.getElementById('b').checked && document.getElementById('e').checked) {
@@ -239,7 +255,7 @@ if (humidity >= 0.71) {
                 type = document.getElementById('e').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://i1.ytimg.com/vi/g0TMEjGS9FQ/hqdefault.jpg");
-				show_video("http://www.youtube.com/v/g0TMEjGS9FQ?version=3&amp;hl=en_US");
+				show_video("http://www.youtube.com/embed/g0TMEjGS9FQ?version=3&amp;hl=en_US");
 				
             }
         if (document.getElementById('b').checked && document.getElementById('f').checked) {
@@ -248,7 +264,7 @@ if (humidity >= 0.71) {
                 type = document.getElementById('f').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://media-cache-ec0.pinimg.com/236x/64/f9/f3/64f9f30d97e0ca1d000c7f7e9433c364.jpg");
-                show_video ("//www.youtube.com/v/Mf7ynpJahY0?version=3&amp;hl=en_US");
+                show_video ("//www.youtube.com/embed/Mf7ynpJahY0?version=3&amp;hl=en_US");
             }
         if (document.getElementById('b').checked && document.getElementById('g').checked) {
                 length = document.getElementById('b').value;
@@ -256,7 +272,7 @@ if (humidity >= 0.71) {
                 type = document.getElementById('g').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("https://i.ytimg.com/vi/Ul8RTTXXp3s/maxresdefault.jpg");
-                show_video ("http://www.youtube.com/v/Ul8RTTXXp3s?hl=en_US&amp;version=3");
+                show_video ("http://www.youtube.com/embed/Ul8RTTXXp3s?hl=en_US&amp;version=3");
 				
             }
         if (document.getElementById('c').checked && document.getElementById('e').checked) {
@@ -265,7 +281,7 @@ if (humidity >= 0.71) {
                 type = document.getElementById('e').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://updoguru.com/wp-content/uploads/2012/10/Curly-Hair-Updos.png");
-				show_video ("http://www.youtube.com/v/JB_RVgiPqdA?version=3&amp;hl=en_US" );
+				show_video ("http://www.youtube.com/embed/JB_RVgiPqdA?version=3&amp;hl=en_US" );
             }
         if (document.getElementById('c').checked && document.getElementById('f').checked) {
                 length = document.getElementById('c').value;
@@ -273,7 +289,7 @@ if (humidity >= 0.71) {
                 type = document.getElementById('f').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image ("http://2.bp.blogspot.com/-9jZzvbZcz5M/T1lzLPPuuJI/AAAAAAAAEQs/E_N0B7Ra-Bk/s1600/1.jpg");
-				show_video("http://www.youtube.com/v/mIk28nw0eUQ?hl=en_US&amp;version=3");
+				show_video("http://www.youtube.com/embed/mIk28nw0eUQ?hl=en_US&amp;version=3");
             }
         if (document.getElementById('c').checked && document.getElementById('g').checked) {
                 length = document.getElementById('c').value;
@@ -281,6 +297,6 @@ if (humidity >= 0.71) {
                 type = document.getElementById('g').value;
                 document.getElementById("bye").innerHTML = type;
                 show_image("http://blog.muipr.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-26-at-1.03.09-PM.png")
-				show_video ("http://www.youtube.com/embed/ZyZkowmdZv8");
+				show_video ("http://www.youtube.com/embed/ZyZkowmdZv8?hl=en_US&amp;version=3");
             }
         }
