@@ -1,26 +1,25 @@
 
 //function show_image(src, width, height, alt) {
 function show_image(imglink) { 
-	alert("changing picture!");
+	alert("Generating Hairstyle!");
 	//clear the picture div
 	$("#picture").html("");
 	//append img id 
 	$("#picture").html('<img width="200px" height="200px" align="left" src="' + imglink + '" />' +
-		'<p> Click me to see a tutorial to get this look </p>');
+		'<h2 class= "thumbnail"   > Click here to get this look </h2>');
 }
 
 function show_video(vidlink) {
-	alert("adding tutorial!");
 	$("#video").html("");
 	//appending vid id
-	$("#video").append('<embed width="560" height="315" src="' + vidlink + '"><object width="100" height="300" data="pearlshampoos2.swf"></object>');
+	$("#video").append('<embed width="560" height="315" src="' + vidlink + '"><object width="100" height="320" data="pearlshampoos2.swf"></object>');
 	} 
 	
 function newFunction() {
 	//show_image("https://lh6.googleusercontent.com/f0Afo_malHBKaZClIb4w-8X8yQ69mUnmpKw9wJSycTZNbxkEwPQaVmrIfjni1a_vrtE9Gw=s190");
 	//show_image("https://lh5.googleusercontent.com/5wR_2UTjEdyiHBsGGUZMGHQE-SO0gifOCXNI7MWTZQ6mW5iON3jSbNTnwahsoAtSe8FShQ=w1034-h627");
 
-    if (humidity < 0.46) {
+    if (humidity <=0.46) {
 		//conditional 1//
         if (document.getElementById('a').checked && document.getElementById('e').checked) {
             length = document.getElementById('a').value;
@@ -110,7 +109,7 @@ function newFunction() {
 			show_video ("http: //www.youtube.com/v/2ABcn-9-P0Y?version=3&amp;hl=en_US");
 			}	
 	}
-	if (humidity > 0.47 && humidity < 0.70) {
+	if (humidity >= 0.47 && humidity <= 0.70) {
         //conditional 9//
 		if (document.getElementById('a').checked && document.getElementById('e').checked) {
                 length = document.getElementById('a').value;
@@ -205,7 +204,7 @@ function newFunction() {
 }
 }
 
-if (humidity > 0.71) {
+if (humidity >= 0.71) {
         if (document.getElementById('a').checked && document.getElementById('e').checked) {
                 length = document.getElementById('a').value;
                 document.getElementById("hi").innerHTML = length;

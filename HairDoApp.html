@@ -27,10 +27,7 @@
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
 				 <a href="#page2" data-role="button" class= "maintext"> Start</a>	
-			
-		<div data-role= "footer">
-			<object width="500" height="300" data="movie.swf"></object>
-		</div> 
+			<br> </br>
 		</div>
 		
 		<!-- Second page of App-->
@@ -82,10 +79,9 @@
 });
 </script>
 			
-			
-			<div data-role= "footer">
-				<h4> 
-				forecast fabulous<h4>
+			<br> </br>
+			<div data-role= "footer" class= "maintext">
+				<p> Faboo Do's For You </p>
 			</div> 
 		</div>
 		
@@ -128,8 +124,8 @@
 			
 	
 			
-			<div data-role= "footer">
-				<h4> forecast fabulous <h4>
+			<div data-role= "footer" class= "maintext">
+				<h4> Faboo Do's For You <h4>
 			</div> 
 		</div>
 		
@@ -142,10 +138,9 @@
 			</div> 
 
 
-			<div id="location"></div>
-			
-			<div id= "humid"> </div>
-			
+			<div id="location" class= "maintext"></div>
+			<div id= "humid" class= "maintext"> </div>
+			<!-- <br> </br> -->
 		<div data-role="content">
 			<div class="content-primary">	
 				<ul data-role="listview">
@@ -174,7 +169,7 @@
 		<!-- Page 5 -->
 		<div data-role= "page" id= "page5"> 
 			<div data-role= "header">
-				<h1 class="subtext"> Hair's How!! <h1>
+				<h1 class="mainheader"> Hair's How!! <h1>
 			</div>
 		
 			<div>
@@ -182,9 +177,21 @@
 				<div id="video" align= "center">
 					<embed src="http://www.youtube.com/v/XGSy3_Czz8k">
 				</div>
-				
-				<div data-role= "footer">
-					<h4> forecast fabulous <h4>
+				<div  align= "center"> <object width="500" height="300" data="movie.swf"  ></object> </div>
+				<script>
+					function uncheck() {
+						document.getElementById("a").checked = false;
+						document.getElementById("b").checked = false;
+						document.getElementById("c").checked = false;
+						document.getElementById("d").checked = false;
+						document.getElementById("e").checked = false;
+						document.getElementById("f").checked = false;
+				}
+				</script>
+				<a href="#page1"  class= "maintext"><button onclick="uncheck()">Back</button></a>	
+
+				<div data-role= "footer" class= "maintext">
+					<h4> Faboo Do's For You <h4>
 				</div> 
 			</div>
 		</div>

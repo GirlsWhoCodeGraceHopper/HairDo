@@ -16,16 +16,25 @@
 .mainheader {
 	font-family:'Lobster', cursive;
 	text-align: center;
-	font-size: 210%
+	font-size: 210%;
 }
 .subheader{
 	font-family:'Lobster', cursive;
 	text-align: center;
-	font-size: 100%
+	font-size: 100%;
 }
 .maintext {
 	font-family: 'Raleway', sans-serif;
-	font-size: 150%
+	font-size: 150%;
+	text-align: center;
+}
+
+.thumbnail {
+	font-family: 'Raleway', sans-serif;
+	font-size: 300%;
+	text-align: center;
+	position: relative;
+	top: 80px;
 }
 
 [data-role=page]{height: 100% !important; position:relative !important;}
