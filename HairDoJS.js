@@ -6,32 +6,27 @@ function show_image(imglink) {
 	$("#picture").html("");
 	//append img id 
 	$("#picture").html('<img width="200px" height="200px" align="left" src="' + imglink + '" />' +
-<<<<<<< HEAD
+
 		'<h2 class= "thumbnail"   > Click here to get this look </h2>');
-=======
-		'<p> Specific instructions on how to do hairstyle. </p>');
->>>>>>> origin/master
+
 }
 
 function show_video(vidlink) {
 	$("#video").html("");
 	//appending vid id
-<<<<<<< HEAD
+
 	$("#video").append('<embed width="560" height="315" src="' + vidlink + '"><object width="100" height="320" data="pearlshampoos2.swf"></object>');
-=======
-	$("#video").append('<embed width="560" height="315" src="' + vidlink + '">');
->>>>>>> origin/master
+
+
 	} 
 	
 function newFunction() {
 	//show_image("https://lh6.googleusercontent.com/f0Afo_malHBKaZClIb4w-8X8yQ69mUnmpKw9wJSycTZNbxkEwPQaVmrIfjni1a_vrtE9Gw=s190");
 	//show_image("https://lh5.googleusercontent.com/5wR_2UTjEdyiHBsGGUZMGHQE-SO0gifOCXNI7MWTZQ6mW5iON3jSbNTnwahsoAtSe8FShQ=w1034-h627");
 
-<<<<<<< HEAD
+
     if (humidity <=0.46) {
-=======
-    if (humidity < 0.31) {
->>>>>>> origin/master
+
 		//conditional 1//
         if (document.getElementById('a').checked && document.getElementById('e').checked) {
             length = document.getElementById('a').value;
@@ -121,11 +116,8 @@ function newFunction() {
 			show_video ("http: //www.youtube.com/embed/2ABcn-9-P0Y?version=3&amp;hl=en_US");
 			}	
 	}
-<<<<<<< HEAD
 	if (humidity >= 0.47 && humidity <= 0.70) {
-=======
-	if (humidity > 0.32 && humidity < 0.70) {
->>>>>>> origin/master
+
         //conditional 9//
 		if (document.getElementById('a').checked && document.getElementById('e').checked) {
                 length = document.getElementById('a').value;
@@ -218,7 +210,6 @@ function newFunction() {
 			 show_video ("http://www.youtube.com/embed/LVS2UcTnYUg?hl=en_US&amp;version=3")
             }		
 }
-}
 
 if (humidity >= 0.71) {
         if (document.getElementById('a').checked && document.getElementById('e').checked) {
@@ -300,3 +291,4 @@ if (humidity >= 0.71) {
 				show_video ("http://www.youtube.com/embed/ZyZkowmdZv8?hl=en_US&amp;version=3");
             }
         }
+}
